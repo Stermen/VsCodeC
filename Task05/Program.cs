@@ -7,7 +7,11 @@
 Console.WriteLine("Введите натуральное число:");
 int number = Convert.ToInt32(Console.ReadLine());
 int i = -number;
-while (i <= number)
+if (number<1)
+{
+    Console.WriteLine("Некорретный ввод");
+}
+else while (i <= number)
 {
     Console.WriteLine($"{i} ");
     ++i;
