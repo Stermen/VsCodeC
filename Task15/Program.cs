@@ -3,6 +3,9 @@
 // 7 -> да
 // 1 -> нет
 
+Console.WriteLine("Введите число");
+int number = Convert.ToInt32(Console.ReadLine());
+
 bool Weekend(int number)
 {
     if (number>5)
@@ -21,7 +24,7 @@ bool WeekDay(int number)
     Console.WriteLine("Это не день недели");
     return false;
 }
-if (WeekDay(Weekend))
+if  (WeekDay(Weekend))
 {
     if (Weekend(number))
     {
@@ -32,6 +35,5 @@ if (WeekDay(Weekend))
         Console.WriteLine("Опять работать");
     }
 }
-Console.WriteLine("Введите число");
-int number = Convert.ToInt32(Console.ReadLine());
+
 // Я потом доработаю или вообще переделаю код. Просто пока устраиваюсь на работу(
