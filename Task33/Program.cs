@@ -6,42 +6,42 @@
 int[] CreateArray(int size, int min, int max)
 {
     int[] arr = new int[size];
-    Random rand= new Random();
+    Random rand = new Random();
     for (int i = 0; i < arr.Length; i++)
     {
-        arr[i] = rand.Next(min,max+1);
+        arr[i] = rand.Next(min, max + 1);
     }
     return arr;
 }
 
-void PrintArray(int[]arr)
+void PrintArray(int[] arr)
 {
-    int length= arr.Length;
+    int length = arr.Length;
     Console.Write("[");
     for (int i = 0; i < length; i++)
     {
-        if (length-i>1)
+        if (length - i > 1)
             Console.Write($"{arr[i]}, ");
-        else 
+        else
             Console.Write($"{arr[i]}");
     }
     Console.WriteLine("]");
 }
 
-bool ContainsNumber(int[]arr, int num)
+bool ContainsNumber(int[] arr, int num)
 {
     for (int i = 0; i < arr.Length; i++)
     {
-        if (arr[i]==num) return true;
-        
+        if (arr[i] == num) return true;
+
     }
     return false;
 }
 
-int[] array=  CreateArray(10,-10,10);
+int[] array = CreateArray(10, -10, 10);
 
 
 Console.Write("Введите число: ");
-int number=Convert.ToInt32(Console.ReadLine());
+int number = Convert.ToInt32(Console.ReadLine());
 PrintArray(array);
-Console.WriteLine(ContainsNumber(array,number) ? $"Массив содержит число {number}" : $"Массив не содержит число {number}");
+Console.WriteLine(ContainsNumber(array, number) ? $"Массив содержит число {number}" : $"Массив не содержит число {number}");
