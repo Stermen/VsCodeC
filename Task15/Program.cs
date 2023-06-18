@@ -24,11 +24,11 @@ bool WeekDay(int number)
     Console.WriteLine("Это не день недели");
     return false;
 }
-if  (WeekDay(Weekend))
+if  (WeekDay(number))
 {
     if (Weekend(number))
     {
-        Console.WriteLine("Выходной");
+        Console.WriteLine("УРА!!!! ВЫХОДНОЙ");
     }
     else
     {
