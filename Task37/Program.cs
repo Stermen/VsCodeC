@@ -39,11 +39,11 @@ int[] MultiplyElements(int[] arr)
     {
         newArr[i] = arr[i] * arr[arr.Length - 1 - i];
     }
-    if (arr.Length % 2 == 1) newArr[arr.Length/2]=arr[arr.Length/2];
+    if (arr.Length % 2 == 1) newArr[newLength - 1] = arr[arr.Length / 2];
     return newArr;
 }
 
-int[] array = CreateArray(9, 0, 10);
+int[] array = CreateArray(7, 0, 10);
 
 PrintArray(array);
 int[] array2 = MultiplyElements(array);
