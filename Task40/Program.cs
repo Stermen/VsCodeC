@@ -26,4 +26,4 @@ if (side1 == 0 || side2 == 0 || side3 == 0)
     return;
 }
 
-Console.WriteLine(SuchThriangleExists(side1,side2,side3)?"Такой треугольник существует":"Такого треугольника не существует");
+Console.WriteLine(SuchThriangleExists(side1, side2, side3) ? "Такой треугольник существует" : "Такого треугольника не существует");
