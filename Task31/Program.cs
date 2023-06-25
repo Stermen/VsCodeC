@@ -68,9 +68,9 @@ PrintArray(array);
 Console.WriteLine("]");
 int[] sumPositiveNegativeElem = GetSumPositiveNegativeElem(array);
 Console.WriteLine($"Сумма положительных элементов = {sumPositiveNegativeElem[0]}");
-Console.WriteLine($"Сумма положительных элементов = {sumPositiveNegativeElem[1]}");
+Console.WriteLine($"Сумма отрицательных элементов = {sumPositiveNegativeElem[1]}");
 
 int sumPositiveElem = GetSumPositiveElem(array);
 int sumNegativeElem = GetSumNegativeElem(array);
 Console.WriteLine($"Сумма положительных элементов = {sumPositiveElem}");
-Console.WriteLine($"Сумма положительных элементов = {sumNegativeElem}");
+Console.WriteLine($"Сумма отрицательных элементов = {sumNegativeElem}");
